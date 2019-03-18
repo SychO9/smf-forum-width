@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<name>Forum Width Theme Setting</name>
+	<id>SychO:forum_width_setting</id>
+	<type>modification</type>
+	<version>1.0</version>
+
+	<install for="2.1 - 2.1.99, 2.1 RC1">
+		<readme type="file" parsebbc="true">README.txt</readme>
+		<modification type="file">language.xml</modification>
+		<require-file name="ForumWidth.php" destination="$sourcedir" />
+		<code>hooks.php</code>
+	</install>
+
+	<uninstall for="2.1 - 2.1.99, 2.1 RC1">
+		<modification type="file" reverse="true">language.xml</modification>
+		<remove-file name="$sourcedir/ForumWidth.php" />
+		<code>hooks.php</code>
+	</uninstall>
+
+</package-info>
