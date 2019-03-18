@@ -60,16 +60,19 @@ function forum_width_css()
 		addInlineCss('
 			#top_section .inner_wrap, #wrapper, #header, #footer .inner_wrap
 			{
-				width:'.$settings['forum_width'].'
+				max-width:'.$settings['forum_width'].';
+				width: unset;
 			}
 			#footer, #top_section
 			{
-				padding-left:0;padding-right:0
+				padding-left: 2px;
+				padding-right: 2px;
 			}
 			@media screen and (max-width: 720px)
 			{
 				#top_section .inner_wrap, #wrapper, #header, #footer .inner_wrap
 				{
+					max-width: unset;
 					width: 100%;
 				}
 			}
