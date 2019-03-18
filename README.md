@@ -1,5 +1,6 @@
 # SMF Forum Width
 Brings back the forum width theme setting to **2.1**
+
 The setting can found in **Admin > Configuration > Current Theme**
 
 ### Changelog
