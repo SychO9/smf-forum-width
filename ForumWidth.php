@@ -32,7 +32,7 @@ if (!defined('SMF'))
  */
 function forum_width_setting()
 {
-	global $context, $settings;
+	global $context, $settings, $txt;
 	$desc = $txt['forum_width_desc'];
 	// if this isn't the Curve2 theme, add a warning that it might not work
 	if($settings['theme_id'] != 1)
