@@ -83,5 +83,5 @@ function forum_width_css()
 function forum_width_credits()
 {
 	global $context;
-	$context['copyrights']['mods'][] = '<a href="https://github.com/SychO9/smf-forum-width">Forum Width Setting</a> by <a href="https://github.com/SychO9>SychO</a> &copy; 2019';
+	$context['copyrights']['mods'][] = '<a href="https://github.com/SychO9/smf-forum-width">Forum Width Setting</a> by <a href="https://github.com/SychO9">SychO</a> &copy; 2019';
 }
