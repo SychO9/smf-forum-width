@@ -22,6 +22,7 @@
 		<!-- hooks -->
 		<hook hook="integrate_theme_settings" function="forum_width_setting" file="$sourcedir/ForumWidth.php" reverse="true"/>
 		<hook hook="integrate_pre_css_output" function="forum_width_css" file="$sourcedir/ForumWidth.php" reverse="true"/>
+		<hook hook="integrate_credits" function="forum_width_credits" file="$sourcedir/ForumWidth.php" reverse="true"/>
 		<!-- files -->
 		<remove-file name="$sourcedir/ForumWidth.php" />
 	</uninstall>
