@@ -2,7 +2,7 @@
 /**
  * @package Forum Width Setting
  * @author Sami "SychO" Mazouz
- * @version 1.0
+ * @version 1.1
  * @license Copyright (c) 2019 Sami "SychO" Mazouz
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,6 +33,8 @@ if (!defined('SMF'))
 function forum_width_setting()
 {
 	global $context, $settings, $txt;
+	// Language strings
+	loadLanguage('ForumWidth');
 	$desc = $txt['forum_width_desc'];
 	// if this isn't the Curve2 theme, add a warning that it might not work
 	if($settings['theme_id'] != 1)
@@ -86,5 +88,5 @@ function forum_width_css()
 function forum_width_credits()
 {
 	global $context;
-	$context['copyrights']['mods'][] = '<a href="https://github.com/SychO9/smf-forum-width">Forum Width Setting</a> by <a href="https://github.com/SychO9">SychO</a> &copy; 2019';
+	$context['copyrights']['mods'][] = '<a href="https://github.com/SychO9/smf-forum-width">Forum Width Setting v1.1</a> by <a href="https://github.com/SychO9">SychO</a> &copy; 2019 | Licensed under <a href="http://en.wikipedia.org/wiki/MIT_License" target="_blank" rel="noopener">The MIT License (MIT)</a>';
 }
