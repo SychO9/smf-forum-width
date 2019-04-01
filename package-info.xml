@@ -6,7 +6,7 @@
 	<type>modification</type>
 	<version>1.1</version>
 
-	<install for="2.1 - 2.1.99, 2.1 RC1">
+	<install for="2.1 - 2.1.99, 2.1 RC1, 2.1 RC2">
 		<readme type="file" parsebbc="true">README.txt</readme>
 		<!-- hooks -->
 		<hook hook="integrate_theme_settings" function="forum_width_setting" file="$sourcedir/ForumWidth.php" />
@@ -18,13 +18,14 @@
 		<redirect url="?action=admin;area=theme;sa=list" />
 	</install>
 
-	<uninstall for="2.1 - 2.1.99, 2.1 RC1">
+	<uninstall for="2.1 - 2.1.99, 2.1 RC1, 2.1 RC2">
 		<!-- hooks -->
 		<hook hook="integrate_theme_settings" function="forum_width_setting" file="$sourcedir/ForumWidth.php" reverse="true"/>
 		<hook hook="integrate_pre_css_output" function="forum_width_css" file="$sourcedir/ForumWidth.php" reverse="true"/>
 		<hook hook="integrate_credits" function="forum_width_credits" file="$sourcedir/ForumWidth.php" reverse="true"/>
 		<!-- files -->
 		<remove-file name="$sourcedir/ForumWidth.php" />
+		<remove-file name="$languagedir/ForumWidth.english.php" />
 	</uninstall>
 
 </package-info>
