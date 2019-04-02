@@ -8,6 +8,7 @@
 
 	<install for="2.1 - 2.1.99, 2.1 RC1, 2.1 RC2">
 		<readme type="file" parsebbc="true">README.txt</readme>
+		<redirect url="?action=admin;area=theme;sa=list" />
 		<!-- hooks -->
 		<hook hook="integrate_theme_settings" function="forum_width_setting" file="$sourcedir/ForumWidth.php" />
 		<hook hook="integrate_pre_css_output" function="forum_width_css" file="$sourcedir/ForumWidth.php" />
@@ -15,7 +16,8 @@
 		<!-- files -->
 		<require-file name="ForumWidth.php" destination="$sourcedir" />
 		<require-file name="ForumWidth.english.php" destination="$languagedir" />
-		<redirect url="?action=admin;area=theme;sa=list" />
+		<!-- Spanish Latin Translation -->
+		<require-file name="ForumWidth.spanish_latin.php" destination="$languagedir" />
 	</install>
 
 	<uninstall for="2.1 - 2.1.99, 2.1 RC1, 2.1 RC2">
@@ -26,6 +28,8 @@
 		<!-- files -->
 		<remove-file name="$sourcedir/ForumWidth.php" />
 		<remove-file name="$languagedir/ForumWidth.english.php" />
+		<!-- Spanish Latin Translation -->
+		<remove-file name="$languagedir/ForumWidth.spanish_latin.php" />
 	</uninstall>
 
 </package-info>
