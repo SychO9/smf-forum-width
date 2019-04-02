@@ -38,7 +38,7 @@ function forum_width_setting()
 	$desc = $txt['forum_width_desc'];
 	// if this isn't the Curve2 theme, add a warning that it might not work
 	if($settings['theme_id'] != 1)
-		$desc .= $txt['forum_width_warning'];
+		$desc .= '<br>' . $txt['forum_width_warning'];
 	// Add the setting to themes settings page(any theme)
 	$context['theme_settings'] = array_merge(array(
 		array(
