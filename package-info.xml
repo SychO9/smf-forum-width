@@ -16,6 +16,7 @@
 		<!-- files -->
 		<require-file name="ForumWidth.php" destination="$sourcedir" />
 		<require-file name="ForumWidth.english.php" destination="$languagedir" />
+		<require-file name="ForumWidth.russian.php" destination="$languagedir" />
 		<!-- Spanish Latin Translation -->
 		<require-file name="ForumWidth.spanish_latin.php" destination="$languagedir" />
 	</install>
@@ -28,6 +29,7 @@
 		<!-- files -->
 		<remove-file name="$sourcedir/ForumWidth.php" />
 		<remove-file name="$languagedir/ForumWidth.english.php" />
+		<remove-file name="$languagedir/ForumWidth.russian.php" />
 		<!-- Spanish Latin Translation -->
 		<remove-file name="$languagedir/ForumWidth.spanish_latin.php" />
 	</uninstall>
